@@ -29,13 +29,13 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
 1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
 
-2. In the PowerShell session, within the Cloud Shell pane, create a new resource group. 
+2. In the PowerShell session, within the Cloud Shell pane, get existing resource group. 
 
     ```PowerShell
-    New-AzResourceGroup -Name myRGPS-[deployId] -Location EastUS
+    Get-AZResourceGroup
     ```
 
-3. Verify your new resource group. 
+3. Format resource group listing output. 
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
@@ -114,4 +114,3 @@ In this task, we will review Azure Advisor recommendations for our virtual machi
 
 Congratulations! You have configured Cloud Shell, created a virtual machine using PowerShell, practiced with PowerShell commands, and viewed Advisor recommendations.
 
-**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

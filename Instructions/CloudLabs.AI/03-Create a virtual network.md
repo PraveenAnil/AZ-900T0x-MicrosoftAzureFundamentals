@@ -22,7 +22,7 @@ In this task, we will create a virtual network.
     | Name | **vnet1** |
     | Address space |**10.1.0.0/16** |
     | Subscription | **Select your subscription** |
-    | Resource group | **myRGVNet-[deployId]** (create new) |
+    | Resource group | **myRGVNet-[deployId]** (use existing) |
     | Location | **(US) East US** |
     | Subnet - Name | **default** |
     | Subnet Address range | **10.1.0.0/24** |
